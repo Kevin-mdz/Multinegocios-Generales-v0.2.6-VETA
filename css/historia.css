@@ -1,0 +1,242 @@
+@import "new-nav.css";
+@import "nav-min2.css";
+@import "footer.css";
+@import "buscador.css";
+
+
+/*	CSS DOCUMENT	*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ 
+#title-ctn{
+    width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+h1{
+    color:  #326FC4;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.pgr {
+    font-size: 20px;
+    color: #000;
+    line-height: 23px;
+}
+
+
+
+
+/*========== GRID ======= */
+
+#grd-prcl-ctn{
+    width: 90%;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#complement-ctn{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 15px;
+    grid-row-gap: 30px;
+    align-items: center;
+}
+
+.img-history {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-history-rpv{
+    display: none;
+}
+
+h3 {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color:  #326FC4;
+    font-weight: 100;
+}
+
+.text{
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .fill{
+        padding-top: 18%;
+    }
+
+    #title-ctn{
+        width: 80%;
+        margin: auto;
+        font-family: 'Montserrat', Arial, sans-serif;
+        margin-bottom: 100px;
+    }
+    
+    #grd-prcl-ctn{
+        width: 90%;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+    
+    #complement-ctn{
+        display: block;
+        padding-bottom: 50px;
+    }
+    
+    h1{
+        color:  #326FC4;
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 20px;
+        color: gray;
+    }
+
+    h3 {
+        position: relative;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color:  #326FC4;
+        font-weight: 100;
+    }
+    
+    .pgr {
+        font-size: 18px;
+        color: #000;
+        line-height: 21px;
+        font-weight: 100;
+    }
+
+
+    .img-history {
+        padding-bottom: 25px;
+        margin: auto;
+        display: block;
+        width: 80%;
+    }
+    
+    .img-history-rpv{
+        margin: auto;
+        display: block;
+        width: 80%;
+        overflow: hidden;   
+        padding-bottom: 25px;     
+    }
+
+    .img-home{
+        display: none;
+    }
+
+    .text{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 540px){
+    .fill{
+		padding-top: 28%;
+	}
+    
+    #title-ctn{
+        width: 80%;
+        margin: auto;
+        font-family: 'Montserrat', Arial, sans-serif;
+        margin-bottom: 100px;
+    }
+    
+    #grd-prcl-ctn{
+        width: 95%;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+    
+    #complement-ctn{
+        display: block;
+        padding-bottom: 50px;
+    }
+    
+    h1{
+        color:  #326FC4;
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 20px;
+        color: gray;
+    }
+
+    h3 {
+        position: relative;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color:  #326FC4;
+        font-weight: 100;
+    }
+    
+    .pgr {
+        font-size: 18px;
+        color: #000;
+        line-height: 21px;
+        font-weight: 100;
+    }
+
+
+    .img-history {
+        padding-bottom: 25px;
+        display: block;
+        width: 100%;
+    }
+    
+    .img-history-rpv{
+        display: block;
+        width: 100%;
+        overflow: hidden;   
+        padding-bottom: 25px;     
+    }
+
+    .img-home{
+        display: none;
+    }
+
+    .text{
+        font-size: 18px;
+    }
+    
+
+
+}
+

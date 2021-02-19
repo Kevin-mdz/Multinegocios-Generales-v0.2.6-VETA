@@ -1,0 +1,209 @@
+@import "new-nav.css";
+@import "nav-min2.css";
+@import "footer.css";
+@import "buscador.css";
+
+
+/*	CSS DOCUMENT	*/ 
+*{
+	margin: 0; 
+    padding: 0;
+}
+
+.carrusel-brand{
+    margin-top: 50px;
+    height: 200px;
+    position: relative;
+}
+
+
+.ctn-categories {
+    max-width: 100%;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 24% 76%);
+    grid-template-rows: repeat(1, auto);
+}
+
+.catalogue-list li{
+    margin: 5px 5px;
+    padding: 7px 5px;
+    list-style: none;
+    background-color: #326FC4;
+}
+
+.catalogue-list li a{
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.catalogue-list li a:hover{
+    color: #fff;
+}
+
+.slick{
+    width: 30%;
+    display: inline-block;
+    margin: 20px 5px;
+}
+
+.slick:hover{
+    opacity: .8;
+}
+
+.slick a, h4{
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+
+    .carrusel-brand{
+        margin-top: 40px;
+        height: 100px;
+        position: relative;
+    }
+
+    .ctn-categories {
+        max-width: 100%;
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .catalogue-list li{
+        display: inline-block;
+        margin: 3px 3px;
+        list-style: none;
+    }
+
+    .catalogue-list li a{
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 7px;
+    }
+    
+    .slick a, h4{
+        color: #000;
+        font-family: Arial, sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .fill{
+        padding-top: 150px;
+    } 
+
+    .carrusel-brand{
+        margin-top: 40px;
+        height: 100px;
+        position: relative;
+    }
+
+    .ctn-categories{
+        display: block;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .ctn-img-categories{
+        display: block;
+    }
+
+    .catalogue-list li{
+        display: inline-block;
+        margin: 3px 3px;
+        list-style: none;
+    }
+
+    .catalogue-list li a{
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 5px 7px;
+    }
+
+    .slick{
+        width: 45%;
+        margin: 20px 5px;
+    }
+
+    .slick a, h4{
+        color: #000;
+        font-family: Arial, sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 540px){
+
+    .fill{
+        padding-top: 130px;
+    }   
+
+    .carrusel-brand{
+        margin-top: 50px;
+        height: 100px;
+        position: relative;
+    }
+
+    .catalogue-list li{
+        display: block;
+        margin: 3px 3px;
+        list-style: none;
+    }
+
+    .catalogue-list li a{
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 5px 7px;
+    }
+
+    .slick{
+        width: 100%;
+        margin: 20px 5px;
+    }
+
+    .slick a, h4{
+        color: #000;
+        font-family: Arial, sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        font-size: 25px;
+        margin: 0;
+    }
+    
+}

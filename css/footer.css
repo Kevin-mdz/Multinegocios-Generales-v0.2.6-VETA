@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+}  
+
+footer {
+	position: relative;
+	margin: 0;
+	background-color: #E6E6E6;
+}
+
+.footer-information {
+	display: grid;
+	width: 75%;
+	margin: 10px auto;
+	grid-template-columns: repeat(3, 33.3%);
+	grid-template-rows: repeat(1, auto);
+	grid-gap: 10px;
+	grid-template-areas: "location phone email";
+}
+
+.footer-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.footer-content > a{
+	text-decoration: none;
+	color: #000;
+	font-size: 22px;
+	padding: 0px 10px;
+	transition: ease-in 0.5s;
+}
+
+.footer-item a{
+	color: #000;
+	font-family: Arial;
+	font-size: 19px;
+	text-decoration: none;
+} 
+
+.footer-content a:hover{
+	color: #326FC4;
+}
+
+.footer-content > a:nth-child(even){
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+.icon-footer {
+	width: 10%;
+}
+
+.location {
+	grid-area: location;
+	text-align: center;
+}
+
+.phone {
+	grid-area: phone;
+	text-align:center;
+}
+
+.email {
+	grid-area: email;
+	text-align:center;
+}
+
+p {
+	font-family: arial;
+	font-size: 20px;
+}
+
+footer > hr{
+	width: 80%;
+	height: 1px;
+	margin: 0px auto;
+	background-color: black;
+}
+
+.derechos{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: blue;
+}
+
+
+/*--------------RESPONSIVE------------------*/
+
+@media screen and (max-width: 768px){
+
+	footer{
+		height: auto;
+		background-color: #E6E6E6;
+		width: 100%;
+	}
+
+	.footer-information {
+		display: grid;
+		width: 75%;
+		margin: 0 auto;
+		grid-template-columns: repeat(3, 33.3%);
+		grid-template-rows: repeat(1, auto);
+		grid-gap: 10px;
+		grid-template-areas: "location phone email";
+	}
+
+	.footer-content{
+		font-weight: 100;
+		letter-spacing: 1px;
+	}
+
+	.footer-item{
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+
+	.footer-item a{
+		color: #000;
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+	}
+
+	.footer-item p{
+		font-size: 18px;
+		font-weight: 100;
+		width: 100%;
+	}
+
+	.derechos{
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		color: blue;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 540px){
+	footer{
+		height: auto;
+		background-color: #E6E6E6;
+	}
+
+	.footer-information {
+		display: block;
+		margin:0 auto;
+	}
+
+	.footer-content{
+		font-weight: 100;
+		letter-spacing: .5px;
+	}
+
+	.icon-footer{
+		padding-bottom: 5px;
+	}
+
+	.footer-content a{
+		margin: 0px 8px;
+	}
+
+	
+}

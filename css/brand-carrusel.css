@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#c .brand {
+    width: 18%;
+    margin: 0 5%;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    padding: 0px;
+    height: 200px; 
+    opacity: 0;
+    text-align: center;
+    transition: 1.5s opacity; 
+    background-repeat: no-repeat;
+}
+
+.active {
+    opacity: 1;
+}
+

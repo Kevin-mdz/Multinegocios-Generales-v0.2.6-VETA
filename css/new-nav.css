@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+#nav-rpv-ctn{
+    display: none;
+}
+
+#main-nav{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo  nav-1"
+                         "logo  nav-2";
+    background-color: #E6E6E6;
+    align-items: center;
+}
+
+#main-nav .logo{
+    grid-area: logo;
+}
+
+#main-nav .nav-1{
+    grid-area: nav-1;
+    margin-left: 32%;
+}
+
+.main-nav-icon{
+    width: 6%;
+    margin-top: 0px;
+}
+
+#main-nav .nav-2{
+    grid-area: nav-2;
+    justify-self: end;
+}
+
+.main-nav-logo{
+    width: 42%;
+    margin-left: 8%;
+}
+ 
+.usp{
+    width: 19%;
+}
+
+#main-nav .content-blog{
+    margin: 0px 10px;
+    padding: 7px 10px;
+    font-family: arial;
+	font-size: 25px;
+    color: #000;
+}
+
+#main-nav .content-blog:hover{
+    background-color: #326FC4;
+    color: #fff;
+}
+
+#main-nav li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.list > li > a{
+    margin: 0px 10px 0px 0px;
+}
+
+.list > li > a{
+    display: block;
+    padding: 7px 10px;
+    color: #000;
+}
+
+.list > li > a:hover{
+    background-color: #326FC4;
+    color: #fff;
+}
+
+.list > li{
+    float: left;
+    font-family: arial;
+	font-size: 25px;
+} 
+
+.category{
+    position: absolute;
+    display: none;
+    background:rgba(50, 111, 196, .8);
+}
+
+.category li{
+    border-top: 2px solid #D02C2F;
+    padding: 8px 4px;
+}
+
+.category > li > a{
+    display: block;
+    font-size: 22px;
+    color: #fff;
+}
+
+.category > li > a:hover{
+    color: #000;
+}
+
+.list li:hover > ul{
+    display: block;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 1024px){
+    
+    #main-nav{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "logo  nav-1"
+                             "logo  nav-2";
+        background-color: #E6E6E6;
+        align-items: center;
+    }
+
+    #main-nav .nav-1{
+        grid-area: nav-1;
+        margin-left: 25%;
+    }
+
+    .main-nav-logo{
+        width: 90%;
+        margin-left: 8%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #main-nav{
+        display: none;
+    }
+
+    #nav-min-ctn{
+        display: none;
+    }
+
+    #nav-rpv-ctn{
+        display: block;
+        z-index: 100;
+    }
+
+    #nav{
+        width: 100%;
+        position: fixed;
+        background-color: #E6E6E6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 100%);
+        align-items: center;
+        padding: 0px 0;
+        z-index: 90;
+    }
+
+    .logo-rpv{
+        width: 45%;
+        justify-self: start;
+        padding-left: 8%;
+    }
+
+    #fa-bars{
+        width: 12%;
+        justify-self: end;
+        padding-right: 8%;
+    }
+
+    #nav-rpv{
+        position: fixed;
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, auto);
+        background-color: rgba(24, 53, 94, .9);
+        padding: 3% 7%;
+        left: -1000px;
+        transition: 500ms;
+        transition-timing-function: ease;
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .icon-rpv{
+        width: 10%;
+    }
+
+    .icon-usp-rpv{
+        width: 22%;
+        padding-bottom: 15px;
+    }
+
+   .lang-icon-rpv{
+        width: 12%;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .nav-list li{
+        list-style: none;
+        font-family: arial;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #000;
+    }
+    
+    .nav-list li a{
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .icon-plus{
+        width: 3%;
+        float: right;
+        padding-top: 3%;
+    }
+
+    .social-icon{
+        align-self: end;
+        text-align: center;
+    }
+
+    .social-icon-rpv{
+        width: 12%;
+        margin: 0px 5px;
+    }
+
+    .copyright{
+        font-family: arial;
+        font-size: 18px;
+        color: #fff;
+        padding-top: 5px;
+    }
+
+}
+
+
+@media only screen and (max-width: 540px){
+    #main-nav{
+        display: none;
+    }
+
+    #nav-rpv-ctn{
+        display: block;
+        z-index: 100;
+    }
+    
+    #nav{
+        width: 100%;
+        position: fixed;
+        background-color: #E6E6E6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 100%);
+        align-items: center;
+        padding: 10px 0;
+        z-index: 90;
+    }
+
+    .logo-rpv{
+        width: 60%;
+        justify-self: start;
+        padding-left: 8%;
+    }
+
+    #fa-bars{
+        width: 20%;
+        justify-self: end;
+        padding-right: 8%;
+    }
+
+    #nav-rpv{
+        position: fixed;
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, auto);
+        background-color: rgba(24, 53, 94, .9);
+        padding: 3% 7%;
+        transition: 500ms;
+        transition-timing-function: ease;
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .icon-rpv{
+        width: 15%;
+    }
+
+    #icon-back{
+        padding-left: 0%;
+        margin-top: 5px;
+    }
+
+    .icon-usp-rpv{
+        width: 25%;
+        padding-bottom: 10px;
+    }
+
+    .lang-icon-rpv{
+        width: 15%;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .nav-list li{
+        list-style: none;
+        font-family: arial;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #000;
+    }
+    
+    .nav-list li a{
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .icon-plus{
+        width: 6%;
+        float: right;
+        padding-top: 3%;
+    }
+
+    .social-icon{
+        align-self: end;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+
+    .social-icon-rpv{
+        width: 18%;
+        margin: 0px 5px;
+        padding-bottom: 5%;
+    }
+
+    .copyright{
+        font-family: arial;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*      Buscador        */
+
+#icon-search{
+    display: none;
+}
+
+#ctn-bar-search{
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #3677D1;
+    padding: 15px 0px;
+    z-index: 9;
+    transition: all 500ms;
+    
+} 
+#ctn-bar-search input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 6px;
+    font-size: 18px;
+}
+
+
+/*Resultados*/
+
+#box-search{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    background-color: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+.result-item{
+    display: grid;
+    grid-template-columns: repeat(2, 70% 30%);
+    grid-template-rows: 1;
+    align-items: center;
+    height: 75px;
+    padding: 5px;
+}
+
+.result-action{
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(1);
+    align-items: center;
+}
+
+.call{
+    padding: 5px 10px;
+    margin-right: 40px;
+    background-color:  #326FC4;
+    border-radius: 15px;
+    color: #fff;
+    justify-self: end;
+    transition: all 500ms;
+}
+
+.call:hover{
+    background-color: #4291FF;
+}
+
+#box-search .bea-description{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #777777;
+    padding: 0px 20px;
+}
+
+.info-item-rslt > a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li p{
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#box-search li:hover{
+    background-color: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 0px;
+    color: #777777;
+} 
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 7;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    #ctn-bar-search{
+        width: 100%;
+        display: block;
+        position: relative;
+        background-color: #326FC4;
+        padding: 10px 0px;
+        z-index: 80;
+        transition: all 500ms;
+    } 
+    
+    #ctn-bar-search input{
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding: 10px 0px;
+        font-size: 18px;
+    }
+    
+    #box-search{
+        position: absolute;
+        width: 90%;
+        background-color: #fff;
+        z-index: 70;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .result-item{
+        display: grid;
+        grid-template-columns: repeat(2, 80% 20%);
+        grid-template-rows: repeat(1, 1fr);
+        height: auto;
+        padding: 15px 0px;
+    }
+    
+    .result-action{
+        display: grid;
+        margin: 0px 0px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+    }
+    
+    .call{
+        padding: 5px 10px;
+        margin: 10px auto;
+        justify-self: none;
+        transition: all 500ms;
+    }
+
+}
+
+
+
+@media screen and (max-width: 540px){
+#ctn-bar-search{
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #326FC4;
+    padding: 10px 0px;
+    z-index: 80;
+    transition: all 500ms;
+} 
+
+#ctn-bar-search input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+#box-search{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 70;
+    overflow: hidden;
+    display: none;
+}
+
+.result-item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    padding: 15px 0px;
+}
+
+.result-action{
+    display: grid;
+    margin: 0px 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+}
+
+.call{
+    padding: 5px 30px;
+    margin: 10px auto;
+    justify-self: none;
+    transition: all 500ms;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

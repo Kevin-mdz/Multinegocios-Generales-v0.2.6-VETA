@@ -1,0 +1,29 @@
+@import "footer.css";
+@import "carrusel.css";
+@import "buscador.css";
+
+
+/*	CSS DOCUMENT	*/
+
+*{
+	margin: 0;
+	padding: 0; 
+}
+
+@media screen and (max-width: 1024px){
+	.fill{
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 768px){
+.fill{
+	padding-top: 18%;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.fill{
+		padding-top: 28%;
+		}
+	}
